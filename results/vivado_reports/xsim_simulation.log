@@ -1,0 +1,25 @@
+Time resolution is 1 ps
+-----------------------------------------
+TEST: All Ones | Expected: 16
+1 MAC  : PASS | Cycles: 17
+2 MACs : PASS | Cycles: 9
+4 MACs : PASS | Cycles: 5
+-----------------------------------------
+TEST: All Zeros | Expected: 0
+1 MAC  : PASS | Cycles: 17
+2 MACs : PASS | Cycles: 9
+4 MACs : PASS | Cycles: 5
+-----------------------------------------
+TEST: All Maximum | Expected: 258064
+1 MAC  : PASS | Cycles: 17
+2 MACs : PASS | Cycles: 9
+4 MACs : PASS | Cycles: 5
+-----------------------------------------
+TEST: Negative Inputs | Expected: -260096
+1 MAC  : PASS | Cycles: 17
+2 MACs : PASS | Cycles: 9
+4 MACs : PASS | Cycles: 5
+=========================================
+ALL HARDWARE SIMULATION TESTS PASSED
+=========================================
+$finish called at time : 806 ns : File "C:/Vivado/ECE4300/4300_MAC_test/4300_MAC_test.srcs/sim_1/new/tb_controller.sv" Line 181

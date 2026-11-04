@@ -1,0 +1,4 @@
+architecture,num_macs,ideal_cycles,measured_cycles,all_ones,all_zeros,all_maximum,negative_inputs
+Sequential,1,16,17,PASS,PASS,PASS,PASS
+Partially Parallel,2,8,9,PASS,PASS,PASS,PASS
+Parallel,4,4,5,PASS,PASS,PASS,PASS

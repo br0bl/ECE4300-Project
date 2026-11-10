@@ -22,6 +22,9 @@ async def reset_dut(dut):
 async def run_vector(dut, name, a, b):
     await FallingEdge(dut.clk)
 
+    num_macs = int(dut.NUM_MACS.value)
+    expected_cycles = 16 // num_macs + 1
+
     for i in range(16):
         dut.a[i].value = a[i]
         dut.b[i].value = b[i]
@@ -30,10 +33,11 @@ async def run_vector(dut, name, a, b):
     await FallingEdge(dut.clk)
     dut.start.value = 0
 
-    for _ in range(20):
+    for cycles in range(1, 25):
         await RisingEdge(dut.clk)
         await ReadOnly()
         if dut.done.value == 1:
+            assert cycles == expected_cycles, (f"{name}: expected latency {expected_cycles}, got {cycles}")
             return dut.result.value.to_signed()
 
     raise AssertionError(f"{name}: timed out waiting for done")
@@ -113,3 +117,8 @@ async def test_mac_regression(dut):
     for f in failures:
         dut._log.error(f)
     assert not failures, f"{len(failures)}/{len(VECTORS)} vectors failed"
+
+    num_macs = int(dut.NUM_MACS.value)
+    expected_cycles = 16 // num_macs + 1
+
+    dut._log.info("%d MAC(s): all vectors passed with expected latency of %d cycles", num_macs, expected_cycles)

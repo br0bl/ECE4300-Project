@@ -1,0 +1,160 @@
+=========================================================================== Running 1 MAC(s) ===========================================================================
+make[1]: Entering directory '/home/br0bl/Projects/HDL/MACcelerator/simulation'
+rm -f results_macs_1.xml
+rm -f results_macs_1.xml
+COCOTB_TEST_MODULES=mac_cocotb COCOTB_TESTCASE=  COCOTB_TOPLEVEL=controller TOPLEVEL_LANG=verilog        \
+	 /usr/bin/vvp -m /home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_icarus.so   sim_build/macs_1/sim.vvp -fst  
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/usr/lib/x86_64-linux-gnu/libpython3.12.so.1.0'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:233  in gpi_load_users                  Running entry func 'initialize' from loaded library '/home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-x86_64-linux-gnu.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:114  in initialize                      Using Python 3.12.12 interpreter at /home/br0bl/Projects/HDL/.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1794353518
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from /home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running mac_cocotb.test_reset (1/10)
+    40.00ns INFO     cocotb.regression                  mac_cocotb.test_reset passed
+    40.00ns INFO     cocotb.regression                  running mac_cocotb.test_reset_mid_operation (2/10)
+   285.00ns INFO     cocotb.regression                  mac_cocotb.test_reset_mid_operation passed
+   285.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=0 (3/10)
+   480.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=0 passed
+   480.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=1 (4/10)
+   675.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=1 passed
+   675.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=2 (5/10)
+   870.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=2 passed
+   870.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=3 (6/10)
+  1065.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=3 passed
+  1065.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=4 (7/10)
+  1260.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=4 passed
+  1260.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=5 (8/10)
+  1455.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=5 passed
+  1455.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=6 (9/10)
+  1650.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=6 passed
+  1650.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_regression (10/10)
+182925.01ns INFO     cocotb.controller                  1 MAC(s): all vectors passed with expected latency of 17 cycles
+182925.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_regression passed
+182925.01ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** mac_cocotb.test_reset                       PASS          40.00           0.00      36082.59  **
+                                                        ** mac_cocotb.test_reset_mid_operation         PASS         245.00           0.00     214929.63  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=0   PASS         195.00           0.00     245119.91  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=1   PASS         195.00           0.00     215270.04  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=2   PASS         195.00           0.00     232137.61  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=3   PASS         195.00           0.00     235695.40  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=4   PASS         195.00           0.00     237599.73  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=5   PASS         195.00           0.00     234552.89  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=6   PASS         195.00           0.00     238101.34  **
+                                                        ** mac_cocotb.test_mac_regression              PASS      181275.00           0.62     290997.14  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=10 PASS=10 FAIL=0 SKIP=0                        182925.01           0.63     289222.29  **
+                                                        ***************************************************************************************************
+FST info: dumpfile sim_build/macs_1/controller.fst opened for output.
+make[1]: Leaving directory '/home/br0bl/Projects/HDL/MACcelerator/simulation'
+=========================================================================== Running 2 MAC(s) ===========================================================================
+make[1]: Entering directory '/home/br0bl/Projects/HDL/MACcelerator/simulation'
+rm -f results_macs_2.xml
+rm -f results_macs_2.xml
+COCOTB_TEST_MODULES=mac_cocotb COCOTB_TESTCASE=  COCOTB_TOPLEVEL=controller TOPLEVEL_LANG=verilog        \
+	 /usr/bin/vvp -m /home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_icarus.so   sim_build/macs_2/sim.vvp -fst  
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/usr/lib/x86_64-linux-gnu/libpython3.12.so.1.0'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:233  in gpi_load_users                  Running entry func 'initialize' from loaded library '/home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-x86_64-linux-gnu.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:114  in initialize                      Using Python 3.12.12 interpreter at /home/br0bl/Projects/HDL/.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1794353519
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from /home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running mac_cocotb.test_reset (1/10)
+    40.00ns INFO     cocotb.regression                  mac_cocotb.test_reset passed
+    40.00ns INFO     cocotb.regression                  running mac_cocotb.test_reset_mid_operation (2/10)
+   205.00ns INFO     cocotb.regression                  mac_cocotb.test_reset_mid_operation passed
+   205.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=0 (3/10)
+   320.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=0 passed
+   320.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=1 (4/10)
+   435.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=1 passed
+   435.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=2 (5/10)
+   550.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=2 passed
+   550.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=3 (6/10)
+   665.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=3 passed
+   665.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=4 (7/10)
+   780.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=4 passed
+   780.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=5 (8/10)
+   895.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=5 passed
+   895.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=6 (9/10)
+  1010.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=6 passed
+  1010.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_regression (10/10)
+101725.01ns INFO     cocotb.controller                  2 MAC(s): all vectors passed with expected latency of 9 cycles
+101725.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_regression passed
+101725.01ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** mac_cocotb.test_reset                       PASS          40.00           0.00      35214.09  **
+                                                        ** mac_cocotb.test_reset_mid_operation         PASS         165.00           0.00     179285.66  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=0   PASS         115.00           0.00     196604.72  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=1   PASS         115.00           0.00     174493.85  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=2   PASS         115.00           0.00     188034.77  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=3   PASS         115.00           0.00     188639.32  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=4   PASS         115.00           0.00     192568.85  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=5   PASS         115.00           0.00     196440.16  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=6   PASS         115.00           0.00     193661.71  **
+                                                        ** mac_cocotb.test_mac_regression              PASS      100715.00           0.41     245059.94  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=10 PASS=10 FAIL=0 SKIP=0                        101725.01           0.42     242937.29  **
+                                                        ***************************************************************************************************
+FST info: dumpfile sim_build/macs_2/controller.fst opened for output.
+make[1]: Leaving directory '/home/br0bl/Projects/HDL/MACcelerator/simulation'
+=========================================================================== Running 4 MAC(s) ===========================================================================
+make[1]: Entering directory '/home/br0bl/Projects/HDL/MACcelerator/simulation'
+rm -f results_macs_4.xml
+rm -f results_macs_4.xml
+COCOTB_TEST_MODULES=mac_cocotb COCOTB_TESTCASE=  COCOTB_TOPLEVEL=controller TOPLEVEL_LANG=verilog        \
+	 /usr/bin/vvp -m /home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_icarus.so   sim_build/macs_4/sim.vvp -fst  
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:242  in gpi_load_users                  Loaded entry library: '/usr/lib/x86_64-linux-gnu/libpython3.12.so.1.0'
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:233  in gpi_load_users                  Running entry func 'initialize' from loaded library '/home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb/simulator.cpython-312-x86_64-linux-gnu.so'
+     -.--ns INFO     pygpi                              ..ib/pygpi/embed.cpp:114  in initialize                      Using Python 3.12.12 interpreter at /home/br0bl/Projects/HDL/.venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:74   in gpi_print_registered_impl       GPI: VPI support registered
+     0.00ns INFO     cocotb.initialize                  Seeding Python random module with 1794353520
+     0.00ns INFO     cocotb.initialize                  Initialized cocotb v2.1.0 from /home/br0bl/Projects/HDL/.venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb.initialize                  Running on Icarus Verilog version 12.0 (stable)
+     0.00ns INFO     cocotb.regression                  Running tests
+     0.00ns INFO     cocotb.regression                  running mac_cocotb.test_reset (1/10)
+    40.00ns INFO     cocotb.regression                  mac_cocotb.test_reset passed
+    40.00ns INFO     cocotb.regression                  running mac_cocotb.test_reset_mid_operation (2/10)
+   165.00ns INFO     cocotb.regression                  mac_cocotb.test_reset_mid_operation passed
+   165.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=0 (3/10)
+   240.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=0 passed
+   240.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=1 (4/10)
+   315.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=1 passed
+   315.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=2 (5/10)
+   390.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=2 passed
+   390.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=3 (6/10)
+   465.00ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=3 passed
+   465.00ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=4 (7/10)
+   540.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=4 passed
+   540.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=5 (8/10)
+   615.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=5 passed
+   615.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_edge_cases/vec_name=6 (9/10)
+   690.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_edge_cases/vec_name=6 passed
+   690.01ns INFO     cocotb.regression                  running mac_cocotb.test_mac_regression (10/10)
+ 61125.01ns INFO     cocotb.controller                  4 MAC(s): all vectors passed with expected latency of 5 cycles
+ 61125.01ns INFO     cocotb.regression                  mac_cocotb.test_mac_regression passed
+ 61125.01ns INFO     cocotb.regression                  ***************************************************************************************************
+                                                        ** TEST                                       STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************
+                                                        ** mac_cocotb.test_reset                       PASS          40.00           0.00      35176.96  **
+                                                        ** mac_cocotb.test_reset_mid_operation         PASS         125.00           0.00     151418.06  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=0   PASS          75.00           0.00     157775.16  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=1   PASS          75.00           0.00     133186.53  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=2   PASS          75.00           0.00     151843.38  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=3   PASS          75.00           0.00     145766.93  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=4   PASS          75.00           0.00     150030.31  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=5   PASS          75.00           0.00     151374.79  **
+                                                        ** mac_cocotb.test_mac_edge_cases/vec_name=6   PASS          75.00           0.00     149763.67  **
+                                                        ** mac_cocotb.test_mac_regression              PASS       60435.00           0.31     193623.78  **
+                                                        ***************************************************************************************************
+                                                        ** TESTS=10 PASS=10 FAIL=0 SKIP=0                         61125.01           0.32     191559.33  **
+                                                        ***************************************************************************************************
+FST info: dumpfile sim_build/macs_4/controller.fst opened for output.
+make[1]: Leaving directory '/home/br0bl/Projects/HDL/MACcelerator/simulation'
+=========================================================================== All tests passed for NUM_MACS = 1, 2, 4 ===========================================================================

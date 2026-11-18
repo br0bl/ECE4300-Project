@@ -1,4 +1,4 @@
 num_macs,latency_cycles,luts,flip_flops,dsp48s,bram,clock_period_ns,max_frequency_mhz,execution_time_ns,throughput_dot_products_per_sec
-1,17,,,,,,,,
-2,9,,,,,,,,
-4,5,,,,,,,,
+1,17,175,49,0,0,10.0,,170,5882353
+2,9,295,69,0,0,10.0,,90,11111111
+4,5,432,109,0,0,10.0,,50,20000000
